@@ -36,6 +36,7 @@ function buildData() {
     DATA.site.pages.forEach(processPage);
     DATA.site.includes.forEach(processInclude);
     processHome(DATA.site.home);
+    process404(DATA.site['404']);
     renderData();
   });
 }
@@ -81,7 +82,9 @@ function renderItem(item, page_template) {
   });
   data.page = item;
   var content = page_template(data);
-  var path = __dirname + '/' + DIST + '/' + item.url + 'index.html';
+
+  var path = __dirname + '/' + DIST + '/'
+  path += item.url.match(/\.html/) ? item.url : item.url + 'index.html';
   writefile(path, content, function(err) {
     if (err) return console.log(err);
     console.log('Wrote ' + item.url);
@@ -133,9 +136,19 @@ function processHome(home) {
   var data = {
     url: '',
     slug: 'home',
-    title: DATA.site.title,
     summary: DATA.site.description,
     content: content
+  };
+  DATA.pages.push(data);
+}
+
+function process404(page) {
+  var source = read.sync(SRC + PAGES + page, 'utf8');
+  var data = {
+    url: '404.html',
+    slug: '404',
+    summary: DATA.site.description,
+    content: source
   };
   DATA.pages.push(data);
 }

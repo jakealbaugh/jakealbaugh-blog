@@ -11,6 +11,7 @@
     "twitter_username": "jake_albaugh",
     "google_analytics": "UA-27107589-2",
     "style": "style.scss",
+    "404": "404.html",
     "home": "index.html",
     "pages": [
       "about.md"

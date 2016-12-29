@@ -1,7 +1,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--  -->
+  {{#if page.title}}
   <title>{{ page.title }} | {{ site.title }}</title>
+  {{else}}
+  <title>{{ site.title }}</title>
+  {{/if}}
   <!--  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ page.summary }}">
@@ -14,14 +19,20 @@
   <!--  -->
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ page.title }}">
+  <!--  -->
+  {{#if page.title}}
+  <meta property="og:title" content="{{ page.title }}"> {{else}}
+  <meta property="og:title" content="{{ site.title }}"> {{/if}}
   <meta property="og:description" content="{{ page.summary }}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <!--  -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@{{ site.twitter_username }}" />
-  <meta name="twitter:title" content="{{ page.title }}" />
+  <!--  -->
+  {{#if page.title}}
+  <meta name="twitter:title" content="{{ page.title }}" /> {{else}}
+  <meta name="twitter:title" content="{{ site.title }}" /> {{/if}}
   <meta name="twitter:description" content="{{ page.summary }}" />
   <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   <!--  -->
