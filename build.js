@@ -52,6 +52,7 @@ function renderData() {
 function copyAssets() {
   fs.copy(SRC + IMAGES, DIST + '/' + IMAGES, function(err) { console.error(err); });
   fs.copy(SRC + MEDIA, DIST + '/' + MEDIA, function(err) { console.error(err); });
+  fs.copy(SRC + 'favicon.png', DIST + '/favicon.png', function(err) { console.error(err); });
 }
 
 function renderSass() {
