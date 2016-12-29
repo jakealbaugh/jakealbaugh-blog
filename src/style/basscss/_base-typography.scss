@@ -1,0 +1,132 @@
+/* Basscss Base Typography */
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  font-size: 100%;
+}
+
+h1 {
+  font-family: $titling-font-family;
+  font-weight: $titling-font-weight;
+  font-style: $titling-font-style;
+  text-transform: $titling-text-transform;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  font-style: $heading-font-style;
+  text-transform: $heading-text-transform;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $heading-line-height;
+  margin-top: 2em;
+  margin-bottom: .5em;
+}
+
+.site-header .site-nav,
+.site-header .site-title {
+  font-family: $titling-font-family;
+  font-weight: $titling-font-weight;
+  font-style: $titling-font-style;
+  text-transform: $titling-text-transform;
+  line-height: $heading-line-height;
+}
+
+p,
+dl,
+ol,
+ul {
+  font-size: $h4;
+  margin-top: 0;
+  margin-bottom: $space-2;
+}
+
+ol,
+ul {
+  padding-left: $space-3;
+}
+
+pre,
+code,
+samp {
+  font-family: $monospace-font-family;
+  font-size: inherit;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: $space-2;
+  overflow-x: scroll;
+}
+
+hr {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+}
+
+.meta:not(.small),
+.post-meta:not(.small) {
+  font-family: $titling-font-family;
+  font-style: italic;
+}
+
+blockquote {
+  margin-top: $space-3;
+  margin-bottom: $space-3;
+  margin-left: 0;
+  padding-left: $space-2;
+  padding-right: $space-2;
+}
+
+blockquote,
+blockquote p {
+  font-style: italic;
+}
+
+h1,
+.h1 {
+  font-size: $h1;
+}
+
+h2,
+.h2 {
+  font-size: $h2;
+}
+
+h3,
+.h3 {
+  font-size: $h3;
+}
+
+h4,
+.h4 {
+  font-size: $h4;
+}
+
+h5,
+.h5 {
+  font-size: $h5;
+}
+
+h6,
+.h6 {
+  font-size: $h6;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}

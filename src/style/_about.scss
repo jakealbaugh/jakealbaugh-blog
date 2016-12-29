@@ -1,0 +1,44 @@
+.about-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  figure {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .avatar {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+
+  @media screen and (min-width: $viewport-medium) {
+    flex-direction: row;
+
+    .avatar {
+      max-width: 200px;
+    }
+
+    figure {
+      flex: 1;
+      margin: 0 1rem 0 0;
+    }
+    section {
+      flex: 2;
+      text-align: left;
+    }
+  }
+}

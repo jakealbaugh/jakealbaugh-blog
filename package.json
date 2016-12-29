@@ -1,0 +1,26 @@
+{
+  "name": "jakealbaugh-blog",
+  "version": "1.0.0",
+  "description": "blog.jakealbaugh.com",
+  "main": "",
+  "author": "Jake Albaugh",
+  "license": "MIT",
+  "scripts": {
+    "serve": "simplehttpserver ./dist",
+    "build": "node build.js",
+    "deploy": "node build.js; git subtree push --prefix dist origin gh-pages"
+  },
+  "dependencies": {
+    "del": "^2.2.2",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^1.0.0",
+    "handlebars": "^4.0.6",
+    "jsonfile": "^2.4.0",
+    "marked": "^0.3.6",
+    "node-sass": "^4.1.1",
+    "read-file": "^0.2.0",
+    "simplehttpserver": "^0.0.6",
+    "striptags": "^2.1.1",
+    "writefile": "^0.2.8"
+  }
+}

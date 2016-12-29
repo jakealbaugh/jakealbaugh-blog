@@ -1,0 +1,79 @@
+.posts {
+  margin: 0 0 4rem;
+}
+
+.post-content .caption {
+  text-align: center;
+  color: #666;
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+.post-content iframe,
+.post-content img {
+  display: block;
+  margin: 2rem auto;
+  box-shadow: 0px 8px 0px -4px $lighter-gray;
+  border: 1px solid $lighter-gray;
+  max-width: 100%;
+  @media (min-width: $viewport-medium) {
+    max-width: 90%;
+  }
+}
+
+.post-content img {
+  height: auto;
+}
+
+.posts .post {
+  margin-bottom: 0.75em;
+  border-bottom: thin solid #f3f3f3;
+}
+
+.posts .post:last-child {
+  border-bottom: none;
+  margin-bottom: .375em;
+  padding-bottom: 0;
+}
+
+.post-link .post-title {
+  margin-top: 0;
+  color: #333;
+}
+
+.post-header {
+  margin-bottom: $h1;
+}
+
+.post-header h1 {
+  line-height: 1;
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  font-size: $h1 * 1.4;
+}
+
+.post-footer {
+  @extend .italic;
+  margin-top: .75rem;
+  text-align: center;
+}
+
+.post-footer .avatar {
+  margin: 2rem auto;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.meta,
+.post-meta {
+  width: auto;
+  font-weight: 300;
+  margin: 0;
+  padding: .25em 0;
+  color: #7a7a7a;
+}
+
+.related-post-title {
+  border-bottom: thin solid #f3f3f3;
+}

@@ -1,0 +1,15 @@
+<div class="home">
+  <div class="posts">
+    {{#each posts}}
+    <div class="post py3">
+      <p class="post-meta">{{ pretty_date }}</p>
+      <a href="{{ ../site.baseurl }}{{ url }}" class="post-link">
+        <h3 class="h1 post-title">{{ title }}</h3>
+      </a>
+      <p class="post-summary">
+        {{ summary }}
+      </p>
+    </div>
+    {{/each}}
+  </div>
+</div>
