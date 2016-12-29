@@ -18,7 +18,6 @@
     "marked": "^0.3.6",
     "node-sass": "^4.1.1",
     "read-file": "^0.2.0",
-    "simple-git": "^1.65.0",
     "simplehttpserver": "^0.0.6",
     "striptags": "^2.1.1",
     "writefile": "^0.2.8"
