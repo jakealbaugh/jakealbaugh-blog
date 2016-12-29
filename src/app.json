@@ -7,7 +7,7 @@
     "baseurl": "/",
     "url": "http://blog.jakealbaugh.com",
     "date_format": "%B %-d, %Y",
-    "destination": "dist",
+    "destination": "docs",
     "twitter_username": "jake_albaugh",
     "google_analytics": "UA-27107589-2",
     "style": "style.scss",

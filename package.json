@@ -6,9 +6,8 @@
   "author": "Jake Albaugh",
   "license": "MIT",
   "scripts": {
-    "serve": "simplehttpserver ./dist",
-    "build": "node build.js",
-    "deploy": "node build.js; git subtree push --prefix dist origin gh-pages"
+    "serve": "simplehttpserver ./docs",
+    "build": "node build.js"
   },
   "dependencies": {
     "del": "^2.2.2",
@@ -19,6 +18,7 @@
     "marked": "^0.3.6",
     "node-sass": "^4.1.1",
     "read-file": "^0.2.0",
+    "simple-git": "^1.65.0",
     "simplehttpserver": "^0.0.6",
     "striptags": "^2.1.1",
     "writefile": "^0.2.8"
