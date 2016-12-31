@@ -102,7 +102,7 @@ function processPost(post) {
   var date = interpretted.matter.match(/date: (.+)/)[1];
   var title = interpretted.matter.match(/title: "?(.+)"| |\n/)[1];
   var image = interpretted.matter.match(/image: (.+)/);
-  image = image ? image[1] : DATA.site.image;
+  image = image ? image[1] : null;
   var tweets = eval(interpretted.matter.match(/tweets: (.+)/)[1]);
   var path = date.replace(/-/g, '/');
   var slug = post.match(/\d{4}-\d{2}-\d{2}-(.+)\.md/)[1];
@@ -130,7 +130,6 @@ function processPage(page) {
   var data = {
     url: slug + '/',
     title: title,
-    image: DATA.site.image,
     slug: slug,
     summary: interpretted.summary,
     content: interpretted.content
@@ -145,7 +144,6 @@ function processHome(home) {
   var data = {
     url: '',
     slug: 'home',
-    image: DATA.site.image,
     summary: DATA.site.description,
     content: content
   };
