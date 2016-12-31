@@ -9,6 +9,7 @@
     "date_format": "%B %-d, %Y",
     "destination": "docs",
     "twitter_username": "jake_albaugh",
+    "image": "images/jake-albaugh.jpg",
     "google_analytics": "UA-27107589-2",
     "style": "style.scss",
     "404": "404.html",

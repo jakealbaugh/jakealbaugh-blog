@@ -14,4 +14,7 @@
   /deep/ .EmbeddedTweet--mediaForward .EmbeddedTweet-tweet {
     border-top: 1px solid $lighter-gray;
   }
+  /deep/ .Tweet-text a.link.customisable {
+    display: block;
+  }
 }
