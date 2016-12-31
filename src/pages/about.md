@@ -9,7 +9,7 @@ title: About
 
   <section>
     <p>
-      I work at <a href="http://codepen.io/" target="_blank">CodePen</a> and am enthusiastic about teaching and learning code. I also play music and enjoy writing.
+      I am an engineer at <a href="http://codepen.io/">CodePen</a> and am enthusiastic about teaching and learning code. I also have a passion for creating and capturing noise as well as writing words.
     </p>
     <hr>
     <a href="http://codepen.io/jakealbaugh" target="_blank">CodePen</a> &bull;

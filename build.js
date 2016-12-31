@@ -101,6 +101,8 @@ function processPost(post) {
   var interpretted = interpretMatterizedMarkdown(contents);
   var date = interpretted.matter.match(/date: (.+)/)[1];
   var title = interpretted.matter.match(/title: "?(.+)"| |\n/)[1];
+  var image = interpretted.matter.match(/image: (.+)/);
+  image = image ? image[1] : DATA.site.image;
   var tweets = eval(interpretted.matter.match(/tweets: (.+)/)[1]);
   var path = date.replace(/-/g, '/');
   var slug = post.match(/\d{4}-\d{2}-\d{2}-(.+)\.md/)[1];
@@ -109,6 +111,7 @@ function processPost(post) {
     title: title,
     slug: slug,
     date: date,
+    image: image,
     minutes: Math.round(interpretted.content.split(' ').length / 180) || 1,
     pretty_date: prettyDate(date),
     tweets: tweets,
@@ -127,6 +130,7 @@ function processPage(page) {
   var data = {
     url: slug + '/',
     title: title,
+    image: DATA.site.image,
     slug: slug,
     summary: interpretted.summary,
     content: interpretted.content
@@ -141,6 +145,7 @@ function processHome(home) {
   var data = {
     url: '',
     slug: 'home',
+    image: DATA.site.image,
     summary: DATA.site.description,
     content: content
   };

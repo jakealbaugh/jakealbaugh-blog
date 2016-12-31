@@ -1,11 +1,13 @@
 [id^="twitter-widget"] {
   margin-right: auto;
   margin-left: auto;
+  /deep/ .EmbeddedTweet,
   /deep/ .EmbeddedTweet--mediaForward {
     border: 1px solid $lighter-gray;
     border-radius: 0px;
     box-shadow: 0px 8px 0px -4px $lighter-gray;
   }
+  /deep/ .EmbeddedTweet .EmbeddedTweet-tweet,
   /deep/ .EmbeddedTweet--mediaForward .EmbeddedTweet-tweet,
   /deep/ .MediaCard-mediaContainer {
     border: none;
@@ -13,5 +15,8 @@
   }
   /deep/ .EmbeddedTweet--mediaForward .EmbeddedTweet-tweet {
     border-top: 1px solid $lighter-gray;
+  }
+  /deep/ .Tweet-text a.link.customisable {
+    display: block;
   }
 }
