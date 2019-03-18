@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html>
-{{{ head }}}
+  {{{ head
+  }}}
 
-<body class="site">
-  <div class="site-wrap">
-    {{{ header }}}
-    <div class="post p2 p-responsive wrap" id="{{ page.slug }}">
-      <div class="measure">
-        <header class="post-header">
-          <h1 class="h2">{{ page.title }}</h1>
-          <span class="post-meta">{{ page.pretty_date }}</span>
-          <br>
-          <span class="post-meta small">{{ page.minutes }} minute read</span>
-        </header>
-        <article class="post-content">
-          {{{ page.content }}}
-        </article>
-        <div class="py2 post-footer">
-          <hr>
-          <img src="{{ site.baseurl }}/images/jake-albaugh.jpg" alt="Jake Albaugh" class="avatar" />
-          <p>
-            I am an engineer at <a href="http://codepen.io/">CodePen</a> and am enthusiastic about teaching and learning code. I also have a passion for creating and capturing noise as well as writing words.
-          </p>
-          <p>
-            Follow me on <a href="https://twitter.com/jake_albaugh">Twitter</a>.
-          </p>
+  <body class="site">
+    <div class="site-wrap">
+      {{{ header }}}
+      <div class="post p2 p-responsive wrap" id="{{ page.slug }}">
+        <div class="measure">
+          <header class="post-header">
+            <h1 class="h2">{{ page.title }}</h1>
+            <span class="post-meta">{{ page.pretty_date }}</span>
+            <br />
+            <span class="post-meta small">{{ page.minutes }} minute read</span>
+          </header>
+          <article class="post-content">{{{ page.content }}}</article>
+          <div class="py2 post-footer">
+            <hr />
+            <img
+              src="{{ site.baseurl }}/images/jake-albaugh.jpg"
+              alt="Jake Albaugh"
+              class="avatar"
+            />
+            <p>
+              I am an engineer at
+              <a href="https://www.vinylmeplease.com/">Vinyl Me, Please</a>,
+              previously at <a href="https://codepen.io/">CodePen</a> and am
+              enthusiastic about teaching and learning code. I also have a
+              passion for creating and capturing noise as well as writing words.
+            </p>
+            <p>
+              Follow me on
+              <a href="https://twitter.com/jake_albaugh">Twitter</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  {{{ footer }}} {{#if page.tweets}}
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  {{/if}}
-</body>
-
+    {{{ footer }}} {{#if page.tweets}}
+    <script
+      async
+      src="//platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    {{/if}}
+  </body>
 </html>
